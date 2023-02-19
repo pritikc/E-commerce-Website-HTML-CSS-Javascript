@@ -67,7 +67,12 @@ a {
 .logo {
   font-size: 18px;
   font-weight: 800;
+  color: #925b39;
+  font-family: Brush Script MT, Brush Script Std, cursive;
+}
+.logo:hover {
   color: #795844;
+  transition: 0.3s ease;
 }
 #navBar {
   display: flex;
@@ -89,14 +94,14 @@ a {
 
 #navBar li a:hover,
 #navBar li a.active {
-  color: #795844;
+  color: #8b634a;
   transition: 0.3s ease;
 }
 
 #navBar li a.active::after,
 #navBar li a:hover::after {
   content: "";
-  background-color: #7f4d4d;
+  background-color: #995c5c;
   height: 2px;
   width: 30%;
   position: absolute; /* child of - #navBar li*/
@@ -156,6 +161,7 @@ a {
   display: flex;
   /* flex-direction: column; */
   justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
 }
 #feature .feature-box {
@@ -431,6 +437,55 @@ a {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
-/* #newsletters .newsForm {
-} */
 /*-------------- Footer -----------------  */
+footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+footer .col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+footer h4 {
+  color: #222222;
+  font-size: 14px;
+  padding-bottom: 15px;
+}
+footer p {
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+footer a {
+  font-size: 12px;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: #535353;
+}
+footer a:hover {
+  color: #823001;
+  text-decoration: underline;
+}
+footer .follow {
+  margin-top: 20px;
+}
+footer .follow i {
+  color: #3d3d3d;
+  padding-right: 5px;
+  cursor: pointer;
+}
+footer .follow i:hover {
+  color: #823001;
+}
+footer .install .row img {
+  border-radius: 6px;
+}
+footer .install img {
+  margin: 10px 0 15px 0;
+}
+footer .copyright {
+  width: 100%;
+  text-align: center;
+}
