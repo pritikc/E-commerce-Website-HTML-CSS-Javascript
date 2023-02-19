@@ -1,0 +1,436 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+}
+
+body {
+  width: 100%;
+}
+
+h1 {
+  font-size: 50px;
+  line-height: 64px;
+  color: #222222;
+}
+
+h2 {
+  font-size: 42px;
+  line-height: 54px;
+  color: #222222;
+}
+
+h4 {
+  font-size: 20px;
+  color: #222222;
+}
+
+h6 {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+p {
+  font-size: 16px;
+  color: #9d9d9d;
+  margin: 15px 0 20px 0;
+}
+
+.section-p1 {
+  padding: 40px 80px;
+}
+
+.section-m1 {
+  margin: 40px 0px;
+}
+a {
+  text-decoration: none;
+}
+/*-------------- header -----------------  */
+#header {
+  background-color: #d9cfc9;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 80px;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
+    rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
+    rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+  z-index: 999;
+  position: sticky; /* solve problem -> show shadow and sticky navBar*/
+  top: 0;
+  left: 0;
+}
+.logo {
+  font-size: 18px;
+  font-weight: 800;
+  color: #795844;
+}
+#navBar {
+  display: flex;
+  align-items: center;
+}
+
+#navBar li {
+  list-style: none;
+  padding: 0 20px;
+  position: relative; /* parent of - #navBar li a.active::after */
+}
+
+#navBar li a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  color: #795844;
+}
+
+#navBar li a:hover,
+#navBar li a.active {
+  color: #795844;
+  transition: 0.3s ease;
+}
+
+#navBar li a.active::after,
+#navBar li a:hover::after {
+  content: "";
+  background-color: #7f4d4d;
+  height: 2px;
+  width: 30%;
+  position: absolute; /* child of - #navBar li*/
+  bottom: -4px;
+  left: 20px;
+}
+/*--------------Home Page -> Hero -----------------  */
+#hero {
+  background-image: url(images/hero4.jpg);
+  height: 90vh;
+  width: 100%;
+  background-size: cover;
+  background-position: top 25% right 0;
+  padding: 0 80px;
+  display: flex;
+  align-items: flex-start; /* Button Problem solve*/
+  flex-direction: column;
+  justify-content: center;
+}
+#hero h4 {
+  padding-bottom: 15px;
+}
+#hero h1 {
+  color: #795844;
+  text-transform: capitalize;
+}
+#hero p {
+  background: #795844;
+  color: rgb(255, 255, 255);
+  padding: 5px 10px;
+  opacity: 0.8;
+  font-weight: 100;
+  letter-spacing: 0.8px;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+    rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+    rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+#hero button {
+  /* background-image: url(); */
+  border: 2px solid #7c5c47;
+  padding: 10px 20px;
+  color: #4b362a;
+  background: transparent;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+#hero button:hover {
+  background: #7c5c47;
+  transition: 0.3s ease;
+  color: aliceblue;
+  cursor: pointer;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+    rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+/*-------------- feature -----------------  */
+#feature {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: space-between;
+  align-items: center;
+}
+#feature .feature-box {
+  width: 180px;
+  border: 1px solid #7c5c47;
+  border-radius: 5px;
+  padding: 20px 10px;
+  margin: 10px 0px;
+  box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+  /* opacity: 0.1; */
+}
+#feature .feature-box:hover {
+  box-shadow: 10px 10px 44px rgba(141, 141, 141, 0.704);
+}
+
+.feature-box img {
+  width: 100%;
+  margin-bottom: 5px;
+}
+.feature-box h6 {
+  /* display: inline-block; */
+  text-align: center;
+  padding: 6px 0;
+  opacity: 0.8;
+  color: rgb(255, 255, 255);
+  background: #795844;
+  line-height: 1;
+}
+.feature-box:nth-child(even) h6 {
+  background: #823001;
+}
+/*-------------- feature - Products -----------------  */
+#featureProducts {
+  text-align: center;
+}
+#featureProducts .f-Container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  flex-wrap: wrap;
+}
+#featureProducts .products {
+  width: 23%;
+  min-width: 250px;
+  max-height: 400px;
+  padding: 10px;
+  border: 1px solid rgb(125, 51, 51);
+  border-radius: 10px;
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+  cursor: pointer;
+  margin: 10px;
+  position: relative; /* parent of - #featureProducts .products .cart*/
+}
+#featureProducts .products:hover {
+  box-shadow: 10px 10px 34px rgba(141, 141, 141, 0.704);
+}
+
+#featureProducts .products img {
+  width: 80%;
+  height: 230px;
+  /* min-width: 100px; */
+  border-radius: 10px;
+}
+#featureProducts .products .description {
+  text-align: start;
+  padding: 10px 0;
+}
+#featureProducts .products .description span {
+  color: rgb(177, 177, 177);
+  font-size: 12px;
+}
+#featureProducts .products .description h5 {
+  color: #1a1a1a;
+  font-size: 14px;
+}
+#featureProducts .products .description i {
+  color: rgb(238, 206, 45);
+  font-size: 12px;
+}
+#featureProducts .products .description h4 {
+  font-size: 18px;
+  font-weight: 700;
+  padding-top: 7px;
+  color: #564848;
+}
+#featureProducts .products .cart {
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  background-color: #e1e1e1;
+  color: #000000;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 20px;
+  right: 10px;
+}
+/*-------------- banner -----------------  */
+#banner {
+  background-image: url(images/banner.jpg);
+  width: 100%;
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#banner h4 {
+  color: #d9cfc9;
+  font-size: 16px;
+}
+#banner h2 {
+  color: #d9cfc9;
+  font-size: 40px;
+  padding: 10px 0;
+}
+#banner h2 span {
+  color: #823001;
+}
+#banner button {
+  font-size: 14px;
+  font-weight: 500;
+  background: #823001;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+#banner button:hover {
+  background: #5f2301;
+  transition: 0.3s ease;
+}
+/*-------------- New Arrivals(same as Feature Products ) -----------------  */
+
+/*-------------- sm-banners -----------------  */
+#sm-banners {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  color: #d9cfc9;
+}
+#sm-banners .banner-box {
+  background: url(images/hero2.jpg);
+  min-width: 650px;
+  height: 40vh;
+  background-size: cover;
+  background-position: center;
+  padding: 30px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: center;
+}
+.banner-box h2 {
+  color: #baa89d;
+}
+.banner-box h4 {
+  color: #ffffff;
+}
+.banner-box span {
+  color: #e7e7e7;
+  margin-bottom: 20px;
+}
+.banner-box button {
+  font-size: 14px;
+  font-weight: 500;
+  background: #823001;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+.banner-box button:hover {
+  background: #682702;
+}
+#sm-banners .banner-box2 {
+  background-image: url("images/hero1.jpg");
+}
+
+/*-------------- Small Banners-3 -----------------  */
+#xsm-bnr {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#xsm-bnr .banner-box {
+  background-image: url("images/hero3.jpg");
+  min-width: 32%;
+  height: 30vh;
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: center;
+
+  margin-bottom: 20px;
+}
+
+#xsm-bnr .banner-box2 {
+  background-image: url("images/hero2.jpg");
+}
+#xsm-bnr .banner-box3 {
+  background-image: url("images/hero4.jpg");
+}
+#xsm-bnr h2 {
+  color: #ffffff;
+}
+#xsm-bnr h3 {
+  color: #823001;
+}
+
+/*-------------- Newsletters -----------------  */
+#newsletters {
+  background-image: url("images/nl.jpg");
+  height: 30vh;
+  background-size: cover;
+  background-position: 20% 30%;
+  background-color: #000000;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#newsletters h4 {
+  font-size: 40px;
+  color: #cfc0b6;
+}
+#newsletters p {
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: 600;
+}
+#newsletters p span {
+  color: #efb326;
+  padding: 8px;
+}
+#newsletters .form {
+  display: flex;
+  width: 40%;
+}
+#newsletters input {
+  height: 3rem;
+  font-size: 15px;
+  width: 100%;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  outline: none;
+  border-right: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+#newsletters button {
+  background: #823001;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+/* #newsletters .newsForm {
+} */
+/*-------------- Footer -----------------  */
