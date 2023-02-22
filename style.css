@@ -672,4 +672,8 @@ footer .copyright {
   #newsletters h4 {
     font-size: 28px;
   }
+  /* -------------- copyright  -------------- */
+  footer .copyright {
+    text-align: start;
+  }
 }
