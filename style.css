@@ -49,6 +49,8 @@ p {
 a {
   text-decoration: none;
 }
+
+/*-------------- ---------------------Index/Home Page ----------------------- -----------------  */
 /*-------------- header -----------------  */
 #header {
   background-color: #d9cfc9;
@@ -218,7 +220,7 @@ a {
   min-width: 250px;
   max-height: 400px;
   padding: 10px;
-  border: 1px solid rgb(125, 51, 51);
+  border: 1px solid rgb(228 228 228);
   border-radius: 10px;
   box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
   cursor: pointer;
@@ -506,6 +508,30 @@ footer .copyright {
   text-align: center;
 }
 /*-------------- ---------------------Media Query ----------------------- -----------------  */
+@media (max-width: 1480px) {
+  #sm-banners .banner-box {
+    min-width: 48%;
+  }
+}
+@media (max-width: 1102px) {
+  #xsm-bnr .banner-box {
+    min-width: 48%;
+  }
+}
+@media (max-width: 992px) {
+  #sm-banners .banner-box {
+    min-width: 45%;
+  }
+  #xsm-bnr .banner-box {
+    min-width: 100%;
+  }
+}
+@media (max-width: 965px) {
+  #sm-banners .banner-box {
+    min-width: 100%;
+    margin-bottom: 20px;
+  }
+}
 /* -------------- max-width: 799px--------------   */
 @media (max-width: 799px) {
   .section-p1 {
@@ -599,14 +625,14 @@ footer .copyright {
   }
   /* -------------- newsletters -------------- */
   #newsletters {
-    height: 30vh;
+    height: 40vh;
   }
   #newsletters .form {
     width: 70%;
   }
 }
 /* -------------- max-width: 477px--------------   */
-@media (max-width: 477px) {
+@media (max-width: 500px) {
   /* -------------- header -------------- */
   #header {
     padding: 10px 30px;
@@ -677,3 +703,121 @@ footer .copyright {
     text-align: start;
   }
 }
+
+/*-------------- ---------------------Shop Page ----------------------- -----------------  */
+#page_header {
+  background-image: url("images/bnr2.jpg");
+  width: 100%;
+  height: 40vh;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 14px;
+}
+#page_header h2,
+#page_header p {
+  color: #383737;
+}
+#pagination {
+  text-align: center;
+}
+#pagination a {
+  text-decoration: none;
+  background-color: #925b39;
+  color: #f8f8f8;
+  padding: 15px 20px;
+  border-radius: 4px;
+  font-weight: 600;
+}
+#pagination a i {
+  font-size: 14px;
+  font-weight: 600;
+}
+/*-------------- ---------------------Shop Page -> Single Product ----------------------- -----------------  */
+#Product_Details {
+  display: flex;
+  margin-top: 20px;
+}
+#Product_Details .single_product_img {
+  width: 40%;
+  margin-right: 50px;
+}
+#main_Img {
+  border: 1px solid #efefef;
+}
+.sml_img_group {
+  display: flex;
+  justify-content: space-between;
+}
+.sml_img_col {
+  flex-basis: 24%;
+  cursor: pointer;
+  border: 1px solid #efefef;
+  border-radius: 4px;
+}
+#Product_Details .single_product_details {
+  width: 50%;
+  padding-top: 30px;
+}
+#Product_Details .single_product_details h4 {
+  padding: 30px 0 20px 0;
+  color: #000000;
+}
+#Product_Details .single_product_details h2 {
+  font-size: 32px;
+  margin: 0px 0 10px;
+  color: #823001;
+}
+#Product_Details .single_product_details select {
+  display: block;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  /* border-radius: 4px; */
+}
+#Product_Details .single_product_details select:focus {
+  outline: none;
+}
+#Product_Details .single_product_details input {
+  width: 50px;
+  height: 36px;
+  padding-left: 10px;
+  font-size: 16px;
+  margin-right: 10px;
+  /* border-radius: 4px; */
+  outline: none;
+}
+#Product_Details .single_product_details input:focus {
+  outline: none;
+}
+#Product_Details .single_product_details button {
+  background-color: #823001;
+  color: #fffefe;
+  padding: 10px;
+  border-radius: 4px;
+  border: 0;
+}
+#Product_Details .single_product_details span {
+  line-height: 25px;
+  color: #c2c2c2;
+}
+/*-------------- ---------------------Media Query ----------------------- -----------------  */
+@media (max-width: 477px) {
+  #Product_Details {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+  }
+  #Product_Details .single_product_img {
+    width: 100%;
+    margin-right: 0px;
+  }
+  #Product_Details .single_product_details {
+    width: 100%;
+  }
+}
+/*-------------- ---------------------blog Page ----------------------- -----------------  */
+/*-------------- ---------------------about Page ----------------------- -----------------  */
+/*-------------- ---------------------contact Page ----------------------- -----------------  */
+/*-------------- ---------------------cart Page ----------------------- -----------------  */
