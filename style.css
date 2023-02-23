@@ -818,6 +818,99 @@ footer .copyright {
   }
 }
 /*-------------- ---------------------blog Page ----------------------- -----------------  */
+#page_header1 {
+  background-image: url("images/bnr4.jpg");
+  width: 100%;
+  height: 40vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 14px;
+}
+#page_header1 h2,
+#page_header1 p {
+  color: #823001;
+}
+#blog {
+  padding: 150px 150px 0 150px;
+}
+#blog .blog_box {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  position: relative; /* parent of #blog .blog_box h1 */
+  padding-bottom: 90px;
+}
+#blog .blog_img {
+  width: 50%;
+  margin-right: 40px;
+}
+#blog img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+#blog .blog_details {
+  width: 50%;
+}
+#blog .blog_details a {
+  text-decoration: none;
+  color: #823001;
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: 700;
+  position: relative; /* parent of #blog .blog_details a::after */
+  transition: 0.3s;
+}
+#blog .blog_details a::after {
+  content: " ";
+  width: 45px;
+  height: 2px;
+  background-color: #823001;
+  position: absolute;
+  top: 6px;
+  right: -55px;
+}
+#blog .blog_details a:hover {
+  color: #c54901;
+}
+#blog .blog_details a:hover::after {
+  background-color: #c54901;
+}
+.blog_box h1 {
+  position: absolute;
+  top: -50px;
+  left: 0px;
+  font-size: 70px;
+  font-weight: 700;
+  color: #e7e7e7;
+  z-index: -9;
+}
+/*-------------- ---------------------Media Query ----------------------- -----------------  */
+@media (max-width: 477px) {
+  #blog {
+    padding: 100px 20px 0 20px;
+  }
+  #blog .blog_box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    position: relative;
+    padding-bottom: 90px;
+  }
+  #blog .blog_img {
+    width: 100%;
+    margin-right: 0px;
+    margin-bottom: 30px;
+  }
+  #blog .blog_details {
+    width: 100%;
+  }
+}
 /*-------------- ---------------------about Page ----------------------- -----------------  */
 /*-------------- ---------------------contact Page ----------------------- -----------------  */
 /*-------------- ---------------------cart Page ----------------------- -----------------  */
