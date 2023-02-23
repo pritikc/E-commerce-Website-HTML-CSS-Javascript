@@ -49,6 +49,17 @@ p {
 a {
   text-decoration: none;
 }
+.btn_primary {
+  font-size: 14px;
+  font-weight: 500;
+  background: #823001;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
 
 /*-------------- ---------------------Index/Home Page ----------------------- -----------------  */
 /*-------------- header -----------------  */
@@ -97,14 +108,14 @@ a {
 
 #navBar li a:hover,
 #navBar li a.active {
-  color: #8b634a;
+  color: #8e3d0a;
   transition: 0.3s ease;
 }
 
 #navBar li a.active::after,
 #navBar li a:hover::after {
   content: "";
-  background-color: #995c5c;
+  background-color: #8e3d0a;
   height: 2px;
   width: 30%;
   position: absolute; /* child of - #navBar li*/
@@ -718,7 +729,8 @@ footer .copyright {
 }
 #page_header h2,
 #page_header p {
-  color: #383737;
+  color: #2f2f2f;
+  text-align: center;
 }
 #pagination {
   text-align: center;
@@ -818,22 +830,14 @@ footer .copyright {
   }
 }
 /*-------------- ---------------------blog Page ----------------------- -----------------  */
-#page_header1 {
+#page_header.blog_header {
+  /* put id and class without space */
   background-image: url("images/bnr4.jpg");
-  width: 100%;
-  height: 40vh;
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  padding: 14px;
 }
-#page_header1 h2,
-#page_header1 p {
-  color: #823001;
-}
+/* #page_header.blog_header h2,
+#page_header.blog_header p {
+  color: #ffffff;
+} */
 #blog {
   padding: 150px 150px 0 150px;
 }
@@ -912,5 +916,213 @@ footer .copyright {
   }
 }
 /*-------------- ---------------------about Page ----------------------- -----------------  */
+
+#page_header.about_header {
+  background-image: url("images/bnr5.jpg");
+}
+#about_head {
+  display: flex;
+  align-items: center;
+}
+#about_head img {
+  height: auto;
+  width: 50%;
+}
+#about_head .about_detail {
+  padding-left: 40px;
+}
+#about_head marquee {
+  background-color: #dfdfdf;
+  width: "100%";
+}
+#about_app {
+  text-align: center;
+}
+#about_app .about_video {
+  width: 70%;
+  height: 100%;
+  margin: 30px auto 0;
+}
+#about_app .about_video video {
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+}
+/*-------------- ---------------------Media Query ----------------------- -----------------  */
+@media (max-width: 477px) {
+  #about_head {
+    flex-direction: column;
+  }
+  #about_head img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  #about_head .about_detail {
+    padding-left: 0px;
+  }
+  #about_app .about_video {
+    width: 100%;
+  }
+}
+
 /*-------------- ---------------------contact Page ----------------------- -----------------  */
-/*-------------- ---------------------cart Page ----------------------- -----------------  */
+#contact_details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#contact_details .c_details {
+  width: 40%;
+}
+#contact_details .c_details span,
+#contact_form form span {
+  font-size: 12px;
+  font-weight: 400;
+}
+#contact_details .c_details h2,
+#contact_form form h2 {
+  font-size: 32px;
+  line-height: 35px;
+  padding: 20px 0;
+  color: #757575;
+}
+#contact_details .c_details h3 {
+  font-size: 16px;
+  padding-bottom: 30px;
+}
+#contact_details .c_details li {
+  list-style: none;
+  display: flex;
+  padding: 10px 0;
+}
+#contact_details .c_details li i {
+  font-size: 14px;
+  padding-right: 20px;
+  color: #757575;
+}
+#contact_details .c_details li p {
+  margin: 0;
+  font-size: 14px;
+}
+#contact_details .c_map {
+  width: 55%;
+  height: 400px;
+}
+#contact_details .c_map iframe {
+  width: 100%;
+  height: 100%;
+}
+/* contact_form */
+#contact_form {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px;
+  padding: 80px;
+  border: 1px solid #1a1a1a;
+}
+#contact_form form {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+#contact_form form input,
+#contact_form form textarea {
+  width: 100%;
+  padding: 12px 15px;
+  outline: none;
+  margin-bottom: 20px;
+  border: 1px solid #ededed;
+}
+#contact_form .c_people {
+  width: 30%;
+  margin-top: 80px;
+}
+#contact_form .c_people .img_c {
+  display: inline-block;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: 15px 15px 0px 0px;
+}
+#contact_form .c_people img {
+  /* width: auto;
+  height: 100%; */
+  width: 65px;
+  height: 65px;
+  margin-left: -3px;
+  object-fit: cover;
+  margin-right: 15px;
+}
+#contact_form .c_people .c_p_div {
+  padding-bottom: 25px;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 15px;
+}
+#contact_form .c_people .c_p_div p {
+  margin: 0;
+  font-size: 13px;
+  line-height: 20px;
+}
+#contact_form .c_people .c_p_div p span {
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+  color: #000000;
+}
+/*-------------- ---------------------Media Query ----------------------- -----------------  */
+@media (max-width: 799px) {
+  #contact_form {
+    padding: 10px;
+  }
+  #contact_form .c_people .c_p_div p {
+    font-size: 10px;
+  }
+}
+@media (max-width: 477px) {
+  #contact_details {
+    flex-direction: column;
+  }
+  #contact_details .c_details {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  #contact_details .c_map {
+    width: 100%;
+  }
+  #contact_form {
+    flex-direction: column;
+    margin: 10px;
+    padding: 30px 10px;
+    flex-wrap: wrap;
+  }
+  #contact_form form {
+    width: 100%;
+  }
+  #contact_form .c_people {
+    width: 100%;
+    margin-top: 20px;
+    /* text-align: center; */
+  }
+  #contact_form .c_people .img_c {
+    margin-top: 15px;
+  }
+  #contact_form .c_people .c_p_div {
+    /* flex-direction: column; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    border-bottom: 1px solid #ededed;
+    margin: 20px;
+  }
+  #contact_form .c_people .c_p_div:last-child {
+    border-bottom: none;
+  }
+  #contact_form .c_people .c_p_div p {
+    font-size: 12px;
+  }
+}
+
+/*-------------- ---------------------cart Page ----------------------- -----------------  */ ;

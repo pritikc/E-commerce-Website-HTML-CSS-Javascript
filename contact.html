@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PK Shop - Blog</title>
+    <title>PK Shop - Contact</title>
     <!-- font-awesome CDN link   -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
     <!-- External CSS   -->
@@ -23,10 +23,12 @@
             <ul id="navBar">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="shop.html">Shop</a></li>
-                <li><a href="blog.html" class="active">Blog</a></li>
+                <li><a href="blog.html">Blog</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li id="cart"><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+                <li id="cart"><a href="cart.html">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </a></li>
                 <a href="#" id="close"><i class="fa fa-times" aria-hidden="true"></i></a>
             </ul>
         </div>
@@ -37,53 +39,69 @@
 
         </div>
     </section>
-    <!-- hero  -->
-    <section id="page_header" class="blog_header">
-        <h2>#readmore</h2>
-        <p>Read all case studies about our products</p>
+    <!-- hero - contact_header -->
+    <section id="page_header" class="contact_header">
+        <h2>#contactus</h2>
+        <p>Let's talk - leave a message, we love to hear from you.</p>
     </section>
-    <!-- blog  -->
-    <section id="blog">
-        <div class="blog_box">
-            <div class="blog_img"><img src="images/lady2.jpg" alt=""></div>
-            <div class="blog_details">
-                <h4>The Cotton Jersy - Hoddie</h4>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste, perferendis praesentium quas illum
-                    sit soluta doloribus? Repellendus repudiandae ea distinctio deserunt repellat officia sit, animi est
-                    quod. Dolore, dicta maiores!</p>
-                <a href="#">Continue Reading</a>
+    <!-- contact_details_map -->
+    <section id="contact_details" class="section-p1">
+        <div class="c_details">
+            <span>GET IN TOUCH</span>
+            <h2>Visit one of our location and contact us today</h2>
+            <h3>Head Office</h3>
+            <div>
+                <li><i class="fa-solid fa-map"></i></i>
+                    <p> 199 Snowdon Cir, Markham, Ontario - L3P 7S7</p>
+                </li>
+                <li>
+                    <i class="fa fa-envelope"></i>
+                    <p>contact@pkshop.com</p>
+                </li>
+                <li><i class="fa fa-phone"></i>
+                    <p>(+1) 665 891 1555 / (+1) 548 631 1555</p>
+                </li>
+                <li><i class="fa fa-clock"></i>
+                    <p>10:00 am - 05:00 pm | Monday - Saturday </p>
+                </li>
             </div>
-            <h1>18/04</h1>
         </div>
-        <div class="blog_box">
-            <div class="blog_img"><img src="images/lady2.jpg" alt=""></div>
-            <div class="blog_details">
-                <h4>The Cotton Jersy - Hoddie</h4>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste, perferendis praesentium quas illum
-                    sit soluta doloribus? Repellendus repudiandae ea distinctio deserunt repellat officia sit, animi est
-                    quod. Dolore, dicta maiores!</p>
-                <a href="#">Continue Reading</a>
-            </div>
-            <h1>18/04</h1>
-        </div>
-        <div class="blog_box">
-            <div class="blog_img"><img src="images/lady2.jpg" alt=""></div>
-            <div class="blog_details">
-                <h4>The Cotton Jersy - Hoddie</h4>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste, perferendis praesentium quas illum
-                    sit soluta doloribus? Repellendus repudiandae ea distinctio deserunt repellat officia sit, animi est
-                    quod. Dolore, dicta maiores!</p>
-                <a href="#">Continue Reading</a>
-            </div>
-            <h1>18/04</h1>
+        <div class="c_map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10731177.7480543!2d-93.7088909304185!3d48.95507688769893!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce05b25f5113af%3A0x70f8425629621e09!2sOntario!5e0!3m2!1sen!2sca!4v1677182410640!5m2!1sen!2sca"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </section>
-    <!-- pagination  -->
-    <section id="pagination" class="section-p1">
-        <a href="#">1</a>
-        <a href="#">2</a>
-        <a href="#"><i class="fa-sharp fa-solid fa-arrow-right"></i></a>
+    <!-- contact_form -->
+    <section id="contact_form">
+        <form action="">
+            <span>LEAVE A MESSAGE</span>
+            <h2>We love to hear from you.</h2>
+            <input type="text" placeholder="Name">
+            <input type="text" placeholder="Email">
+            <input type="text" placeholder="Subject">
+            <textarea name="" id="" rows="10" cols="30" placeholder="Your Message"></textarea>
+            <button class="btn_primary">Submit</button>
+        </form>
+        <div class="c_people">
+            <div class="c_p_div">
+                <div class="img_c"> <img src="images/contact/p1.jpg" alt=""></div>
+                <p><span>Liza Mac</span>Head Manager<br>Phone : (+1) 665 891 1556 <br>Email : Lily@pkshop.com
+                </p>
+            </div>
+            <div class="c_p_div">
+                <div class="img_c"><img src="images/contact/p2.jpg" alt=""> </div>
+                <p><span>Marry Roze</span> Senior Marketing Manager<br>Phone : (+1) 665 891 1557 <br>Email :
+                    Marry@pkshop.com</p>
+            </div>
+            <div class="c_p_div">
+                <div class="img_c"><img src="images/contact/p3.jpg" alt=""> </div>
+                <p><span>John Doe</span> Project Manager<br>Phone : (+1) 665 891 1558 <br>Email : John@pkshop.com</p>
+            </div>
+        </div>
     </section>
+
     <!-- newsletters  -->
     <section id="newsletters" class="section-p1 section-m1">
         <div class="newsText">
