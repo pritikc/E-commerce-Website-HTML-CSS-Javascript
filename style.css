@@ -133,7 +133,7 @@ a {
 }
 /*--------------Home Page -> Hero -----------------  */
 #hero {
-  background-image: url(images/hero4.jpg);
+  background-image: url(images/banners/hero4.jpg);
   height: 90vh;
   width: 100%;
   background-size: cover;
@@ -283,7 +283,7 @@ a {
 }
 /*-------------- banner -----------------  */
 #banner {
-  background-image: url(images/banner.jpg);
+  background-image: url(images/banners/banner.jpg);
   width: 100%;
   height: 50vh;
   background-size: cover;
@@ -331,7 +331,7 @@ a {
   color: #d9cfc9;
 }
 #sm-banners .banner-box {
-  background: url(images/hero2.jpg);
+  background: url(images/banners/hero2.jpg);
   min-width: 650px;
   height: 40vh;
   background-size: cover;
@@ -369,7 +369,7 @@ a {
   background: #682702;
 }
 #sm-banners .banner-box2 {
-  background-image: url("images/hero1.jpg");
+  background-image: url("images/banners/hero1.jpg");
 }
 
 /*-------------- Small Banners-3 -----------------  */
@@ -398,10 +398,10 @@ a {
 }
 
 #xsm-bnr .banner-box2 {
-  background-image: url("images/hero2.jpg");
+  background-image: url("images/banners/hero2.jpg");
 }
 #xsm-bnr .banner-box3 {
-  background-image: url("images/hero4.jpg");
+  background-image: url("images/banners/hero4.jpg");
 }
 #xsm-bnr h2 {
   color: #ffffff;
@@ -412,7 +412,7 @@ a {
 
 /*-------------- Newsletters -----------------  */
 #newsletters {
-  background-image: url("images/nl.jpg");
+  background-image: url("images/banners/nl.jpg");
   background-repeat: no-repeat;
   height: 30vh;
   background-size: cover;
@@ -717,7 +717,7 @@ footer .copyright {
 
 /*-------------- ---------------------Shop Page ----------------------- -----------------  */
 #page_header {
-  background-image: url("images/bnr2.jpg");
+  background-image: url("images/banners/bnr2.jpg");
   width: 100%;
   height: 40vh;
   background-size: cover;
@@ -832,7 +832,7 @@ footer .copyright {
 /*-------------- ---------------------blog Page ----------------------- -----------------  */
 #page_header.blog_header {
   /* put id and class without space */
-  background-image: url("images/bnr4.jpg");
+  background-image: url("images/banners/bnr4.jpg");
 }
 /* #page_header.blog_header h2,
 #page_header.blog_header p {
@@ -918,7 +918,7 @@ footer .copyright {
 /*-------------- ---------------------about Page ----------------------- -----------------  */
 
 #page_header.about_header {
-  background-image: url("images/bnr5.jpg");
+  background-image: url("images/banners/bnr5.jpg");
 }
 #about_head {
   display: flex;
@@ -1018,7 +1018,7 @@ footer .copyright {
   justify-content: space-between;
   margin: 30px;
   padding: 80px;
-  border: 1px solid #1a1a1a;
+  border: 1px solid #d9d9d9;
 }
 #contact_form form {
   width: 65%;
