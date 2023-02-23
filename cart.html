@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PK Shop - Cart</title>
+    <!-- font-awesome CDN link   -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+    <!-- External CSS   -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- header  -->
+    <section id="header">
+        <!-- <a href="#"><img src="" /></a> -->
+        <a href="index.html">
+            <p class="logo">PK Shop</p>
+        </a>
+        <div>
+            <ul id="navBar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li id="cart"><a href="cart.html" class="active">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </a></li>
+                <a href="#" id="close"><i class="fa fa-times" aria-hidden="true"></i></a>
+            </ul>
+        </div>
+        <div id="hamburger_menu">
+            <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            <i id="bar" class="fa-solid fa-outdent"></i>
+
+
+        </div>
+    </section>
+    <!-- hero - contact_header -->
+    <section id="page_header" class="contact_header">
+        <h2>#contactus</h2>
+        <p>Let's talk - leave a message, we love to hear from you.</p>
+    </section>
+    <section id="mycart" class="section-p1">
+        <table width="100%">
+            <thead>
+                <tr>
+                    <td>Remove</td>
+                    <td>Image</td>
+                    <td>Product</td>
+                    <td>Price</td>
+                    <td>Quantity</td>
+                    <td>Subtotal</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="#"><i class="fa-regular fa-circle-xmark"></i></a></td>
+                    <td><img src="images/jn.png"></td>
+                    <td>Jacket</td>
+                    <td>$55.20</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$55.20</td>
+                </tr>
+                <tr>
+                    <td><a href="#"><i class="fa-regular fa-circle-xmark"></i></a></td>
+                    <td><img src="images/jn.png"></td>
+                    <td>Jacket</td>
+                    <td>$55.20</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$55.20</td>
+                </tr>
+                <tr>
+                    <td><a href="#"><i class="fa-regular fa-circle-xmark"></i></a></td>
+                    <td><img src="images/jn.png"></td>
+                    <td>Jacket</td>
+                    <td>$55.20</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$55.20</td>
+                </tr>
+            </tbody>
+
+        </table>
+    </section>
+    <section id="cart_add" class="section-p1">
+        <div id="cart_coupon">
+            <h3>Apply Coupon code</h3>
+            <div>
+                <input type="text" placeholder="Enter Coupon code">
+                <button class="btn_primary">Apply</button>
+            </div>
+        </div>
+        <div id="cart_subtotal">
+            <h3>Cart Totals</h3>
+            <table>
+                <tr>
+                    <td>Cart Subtotal</td>
+                    <td>$150</td>
+                </tr>
+                <tr>
+                    <td>Shipping</td>
+                    <td>Free</td>
+                </tr>
+                <tr>
+                    <td><strong>Total</strong></td>
+                    <td><strong>$150</strong></td>
+                </tr>
+            </table>
+            <button class="btn_primary">Proceed Checkout</button>
+
+
+        </div>
+    </section>
+    <!-- footer  -->
+    <footer class="section-p1">
+        <div class="col">
+            <!-- <img src="" alt=""> -->
+            <p class="logo">PK Shop</p>
+            <h4>Contact</h4>
+            <p><strong>Address :</strong> 199 Snowdon Cir, Markham, Ontario - L3P 7S7</p>
+            <p><strong>Phone :</strong> +1 66589 11555 / +1 54863 11555</p>
+            <p><strong>Hours :</strong> 10:00 AM - 11:00 PM | Mon-Sat</p>
+
+            <div class="follow">
+                <h4> Follow Us</h4>
+                <div class="icons">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-square-instagram"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-pinterest"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">About Us</a>
+            <a href="#">Return policy</a>
+            <a href="#">Payment Policy</a>
+            <a href="#">Tearms and Condition</a>
+            <a href="#">Warranty & Repair</a>
+        </div>
+
+        <div class="col">
+            <h4>Account</h4>
+            <a href="#">Sign In</a>
+            <a href="#">View Cart</a>
+            <a href="#">Track My Order</a>
+            <a href="#">Help</a>
+            <a href="#">FAQ</a>
+        </div>
+
+        <div class="col install">
+            <h4>Install App</h4>
+            <p>From App store or google Pay</p>
+            <div class="row">
+                <img src="images/gpp1.png" alt="">
+                <img src="images/gpp2.png" alt="">
+            </div>
+            <p>From App store or google Pay</p>
+            <div class="row">
+                <img src="images/payment.png" alt="">
+            </div>
+        </div>
+        <div class="copyright">
+            <p>©2018-2023 The Pk Shop Inc. All rights reserved </p>
+        </div>
+    </footer>
+
+
+    <!-- External JS  -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>

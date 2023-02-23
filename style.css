@@ -1125,4 +1125,106 @@ footer .copyright {
   }
 }
 
-/*-------------- ---------------------cart Page ----------------------- -----------------  */ ;
+/*-------------- ---------------------cart Page ----------------------- -----------------  */
+#mycart {
+  overflow-x: auto;
+}
+#mycart table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed; /* fix the position of items */
+  white-space: nowrap; /*  to end or stop (something) by force - continue single line */
+}
+#mycart table thead {
+  border: 1px solid #dcdcdc;
+  border-left: 0;
+  border-right: 0;
+}
+#mycart table thead td {
+  padding: 16px 0;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #656565;
+}
+#mycart table tbody tr td {
+  padding-top: 15px;
+}
+#mycart table tbody td {
+  font-size: 13px;
+}
+#mycart table img {
+  width: 70px;
+}
+#mycart table td:nth-child(1) {
+  width: 100px;
+  text-align: center;
+}
+#mycart table td:nth-child(2) {
+  width: 150px;
+  text-align: center;
+}
+#mycart table td:nth-child(3) {
+  width: 250px;
+  text-align: center;
+}
+#mycart table td:nth-child(4),
+#mycart table td:nth-child(5),
+#mycart table td:nth-child(6) {
+  width: 150px;
+  text-align: center;
+}
+#mycart table td:nth-child(5) input {
+  width: 70px;
+  padding: 10px 5px 10px 15px;
+}
+#cart_add {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#cart_coupon {
+  width: 50%;
+  margin-bottom: 30px;
+}
+#cart_coupon h3,
+#cart_subtotal h3 {
+  padding-bottom: 15px;
+}
+#cart_coupon input {
+  padding: 10px 20px;
+  outline: none;
+  width: 60%;
+  margin-right: 10px;
+  border: 1px solid #dcdcdc;
+  border-radius: 4px;
+}
+#cart_subtotal {
+  width: 50%;
+  margin-bottom: 30px;
+  border: 1px solid #dcdcdc;
+  padding: 30px;
+}
+#cart_subtotal table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+#cart_subtotal table td {
+  width: 50%;
+  border: 1px solid #dcdcdc;
+  padding: 10px;
+  font-size: 13px;
+}
+/*-------------- ---------------------Media Query ----------------------- -----------------  */
+@media (max-width: 799px) {
+  #cart_add {
+    flex-direction: column;
+  }
+  #cart_coupon {
+    width: 100%;
+  }
+  #cart_subtotal {
+    width: 100%;
+  }
+}
